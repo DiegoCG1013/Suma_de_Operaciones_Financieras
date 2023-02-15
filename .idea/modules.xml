@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Informatica/POO/AAPruebas/AAPruebas.iml" filepath="$PROJECT_DIR$/Informatica/POO/AAPruebas/AAPruebas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TecnicasDeProgramacion/Analisis_Tecnicas/Analisis_Tecnicas.iml" filepath="$PROJECT_DIR$/TecnicasDeProgramacion/Analisis_Tecnicas/Analisis_Tecnicas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/ExamenFinalEnero/ExamenFinalEnero.iml" filepath="$PROJECT_DIR$/POO/ExamenFinalEnero/ExamenFinalEnero.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/GestionExpedientes/GestionExpedientes.iml" filepath="$PROJECT_DIR$/POO/GestionExpedientes/GestionExpedientes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/ObrasDeArte/ObrasDeArte.iml" filepath="$PROJECT_DIR$/POO/ObrasDeArte/ObrasDeArte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/POO.iml" filepath="$PROJECT_DIR$/POO/POO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Informatica/POO/PracticaFinalParte1/PracticaFinalParte1.iml" filepath="$PROJECT_DIR$/Informatica/POO/PracticaFinalParte1/PracticaFinalParte1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TecnicasDeProgramacion/PrimosRecuersivos/PrimosRecursivos.iml" filepath="$PROJECT_DIR$/TecnicasDeProgramacion/PrimosRecuersivos/PrimosRecursivos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/Pruebas/Pruebas.iml" filepath="$PROJECT_DIR$/POO/Pruebas/Pruebas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TecnicasDeProgramacion/Sorpresa/Sorpresa.iml" filepath="$PROJECT_DIR$/TecnicasDeProgramacion/Sorpresa/Sorpresa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/Streams/Streams.iml" filepath="$PROJECT_DIR$/POO/Streams/Streams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TecnicasDeProgramacion/TecnicasDeProgramacion.iml" filepath="$PROJECT_DIR$/TecnicasDeProgramacion/TecnicasDeProgramacion.iml" />
+    </modules>
+  </component>
+</project>

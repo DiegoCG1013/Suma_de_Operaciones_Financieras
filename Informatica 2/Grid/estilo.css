@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#migrid {
+    border: 2px blue solid;
+}
+
+#migrid div {
+    border: 2px red solid;
+}
+
+/* Definimos el grid */
+
+#migrid {
+    display: grid;
+    grid-template-columns: 200px 1fr 100px;
+    grid-template-rows: 100px 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    height: 100vh;
+
+    grid-template-areas: "cabecera cabecera cabecera" "menu contenido lateral";
+}
+
+#elemento1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-area: cabecera;
+}
+
+#elemento2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-area: lateral;
+}
+
+#elemento3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-area: contenido;
+}
+
+#elemento4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-area: menu;
+}
