@@ -97,7 +97,7 @@ public class Ejercicio_5 {
         Scanner sc = new Scanner(System.in);
         String nombre, apellido, puesto;
         int horas, hijos;
-        double tarifa, salarioBruto, salarioNeto, primaFamiliar, deducciones;
+        double tarifa, primaFamiliar, salarioBruto, salarioNeto, contribucionDeudaSocial, contribucionContingencias, seguroMedico, fondoPensiones, seguroDesempleo, pensionComplementaria, contribucionJubilacion, deduccionesTotales;
 
         try {
             System.out.println("¿Apellido de la persona?");
@@ -113,12 +113,52 @@ public class Ejercicio_5 {
             System.out.println("¿Número de hijos?");
             hijos = sc.nextInt();
 
+            salarioBruto = (salarioBruto(horas, tarifa));
+            contribucionDeudaSocial = salarioBruto * 0.0349;
+            contribucionContingencias = salarioBruto * 0.0615;
+            seguroMedico = salarioBruto * 0.0095;
+            fondoPensiones = salarioBruto * 0.0844;
+            seguroDesempleo = salarioBruto * 0.0305;
+            pensionComplementaria = salarioBruto * 0.0381;
+            contribucionJubilacion = salarioBruto * 0.0102;
+            deduccionesTotales = contribucionDeudaSocial + contribucionContingencias + seguroMedico + fondoPensiones + seguroDesempleo + pensionComplementaria + contribucionJubilacion;
+            salarioNeto = salarioBruto - deduccionesTotales;
+            primaFamiliar = primaFamiliar(hijos);
 
-
-
+            System.out.println("Nómina de " + nombre + " " + apellido + "\nEstado: " + puesto + "\nSalario bruto: "
+                    + salarioBruto + "€" + "\n\tDeducciones: " + "\nContribución para el pago de la deuda social y contingencias comunes imponible: "
+                    + contribucionDeudaSocial + "€" + "\nContribución de contingencias comunes no imponible: " + contribucionContingencias + "€"
+                    + "\nSeguro médico: " + seguroMedico + "€" + "\nFondo de pensiones: " + fondoPensiones + "€" + "\nSeguro de desempleo: "
+                    + seguroDesempleo + "€" + "\nPensión complementaria (Entidad privada): " + pensionComplementaria + "€" +
+                    "\nContribución de jubilación anticipada: " + contribucionJubilacion + "€" + "\nDeducciones totales de los empleados: "
+                    + deduccionesTotales + "€" + "\nSalario neto: " + salarioNeto + "€" + "\nPrima familiar: " + primaFamiliar + "€" +
+                    "\nSalario neto a pagar: " + (primaFamiliar + salarioNeto) + "€");
 
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
+    }
+
+    static double salarioBruto(int horas, double tarifa) {
+        double  salarioBruto = 0;
+        if (horas < 169) {
+            salarioBruto = horas * tarifa;
+        } else if (horas >= 169 && horas <= 180) {
+            salarioBruto = (horas - 169) * (tarifa * 1.5) + 169 * tarifa;
+        } else if (horas > 180) {
+            salarioBruto = (horas - 180) * (tarifa * 1.6) + 11 * (tarifa * 1.5) + 169 * tarifa;
+        }
+        return salarioBruto;
+    }
+    static double primaFamiliar(int hijos) {
+        double primaFamiliar = 0;
+        if (hijos == 1) {
+            primaFamiliar = 20;
+        } else if (hijos == 2) {
+            primaFamiliar = 50;
+        } else if (hijos > 2) {
+            primaFamiliar = 70 + (hijos - 2) * 20;
+        }
+        return primaFamiliar;
     }
 }
