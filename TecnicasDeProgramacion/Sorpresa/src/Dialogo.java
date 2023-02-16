@@ -1,3 +1,3 @@
 public interface Dialogo {
-    public void conversar();
+    public int conversar();
 }
