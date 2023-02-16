@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Ejercicio_1 {
-    //Enunciado: Escriba un algoritmo que muestre "riesgo de hielo", si la temperatura introducida es inferior a 2°C.
+public class Ejercicio_2 {
+    // Enunciado: Modificar el algoritmo anterior para mostrar un mensaje según la temperatura
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -11,6 +11,9 @@ public class Ejercicio_1 {
         try {
             int temperaturaInt = Integer.parseInt(temperatura);
             if (temperaturaInt < 2) System.out.println("Riesgo de hielo");
+            else if (temperaturaInt < 15) System.out.println("Hace frio");
+            else if (temperaturaInt < 30) System.out.println("Buena temperatura");
+            else System.out.println("Demasiado calor");
         }catch (Exception e) {
             System.out.println("No has introducido un número entero");
         }

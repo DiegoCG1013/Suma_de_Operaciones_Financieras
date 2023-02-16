@@ -4,6 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Informatica/POO/AAPruebas/AAPruebas.iml" filepath="$PROJECT_DIR$/Informatica/POO/AAPruebas/AAPruebas.iml" />
       <module fileurl="file://$PROJECT_DIR$/TecnicasDeProgramacion/Analisis_Tecnicas/Analisis_Tecnicas.iml" filepath="$PROJECT_DIR$/TecnicasDeProgramacion/Analisis_Tecnicas/Analisis_Tecnicas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TecnicasDeProgramacion/Ejercicios_Tema_3/Ejercicio_1/Ejercicio_1.iml" filepath="$PROJECT_DIR$/TecnicasDeProgramacion/Ejercicios_Tema_3/Ejercicio_1/Ejercicio_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TecnicasDeProgramacion/Ejercicios_Tema_3/Ejercicio_2/Ejercicio_2.iml" filepath="$PROJECT_DIR$/TecnicasDeProgramacion/Ejercicios_Tema_3/Ejercicio_2/Ejercicio_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TecnicasDeProgramacion/Ejercicios_Tema_3/Ejercicio_3/Ejercicio_3.iml" filepath="$PROJECT_DIR$/TecnicasDeProgramacion/Ejercicios_Tema_3/Ejercicio_3/Ejercicio_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TecnicasDeProgramacion/Ejercicios_Tema_3/Ejercicios_Tema_3.iml" filepath="$PROJECT_DIR$/TecnicasDeProgramacion/Ejercicios_Tema_3/Ejercicios_Tema_3.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/ExamenFinalEnero/ExamenFinalEnero.iml" filepath="$PROJECT_DIR$/POO/ExamenFinalEnero/ExamenFinalEnero.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/GestionExpedientes/GestionExpedientes.iml" filepath="$PROJECT_DIR$/POO/GestionExpedientes/GestionExpedientes.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
