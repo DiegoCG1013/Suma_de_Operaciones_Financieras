@@ -2,34 +2,7 @@ import java.util.Scanner;
 
 public class Nota_Media_V3 {
     //Enunciado: Modificar el algoritmo anterior para mostrar además el porcentaje de notas superiores a 10/20.
-    //
-    //Ejemplo de ejecución del algoritmo:
-    //
-    //¿Nota (-1 para terminar)?
-    //
-    //14
-    //
-    //¿Nota (-1 para terminar)?
-    //
-    //12
-    //
-    //¿Nota (-1 para terminar)?
-    //
-    //9
-    //
-    //¿Nota (-1 para terminar)?
-    //
-    //7
-    //
-    //¿Nota (-1 para terminar)?
-    //
-    //10
-    //
-    //¿Nota (-1 para terminar)?
-    //
-    //-1
-    //
-    //Media = 10,4 (60 % ≥10)
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
