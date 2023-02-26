@@ -1,29 +1,27 @@
 window.addEventListener("load", () => {
-
-    let div = document.getElementById('1')
-    div.innerText = obtenerDatosSWAPI()
-
+    obtenerDatosSWAPI('films')
 });
 
-function obtenerDatosSWAPI() {
-    fetch('https://swapi.dev/api/people')
+function obtenerDatosSWAPI(solicitud) {
+    fetch('https://swapi.dev/api/' + solicitud)
         .then(response => {
             return response.text()
         })
         .then(contenido => {
-            let div = document.getElementById('1')
-            div.innerText = contenido
-
+            let x = document.getElementById("1");
+            x.innerText = contenido;
             let objeto
             try {
                 objeto = JSON.parse(contenido)
                 return objeto
-            } catch(e) {
+            } catch (e) {
                 alert('Error parseando el objeto JSON')
             }
         })
-        .then(objeto => {
-            return objeto
-        })
-        .catch(e => alert(`Error: ${e}`))
 }
+
+function obtenerIdURLRecursoSWAPI(url) {
+    return Number(url.match(/([0-9]*)\/?$/)[1])
+}
+
+
