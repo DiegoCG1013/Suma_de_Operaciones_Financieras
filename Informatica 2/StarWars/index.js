@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-    obtenerDatosSWAPI('planets' + '/1')
+    obtenerDatosSWAPI('films/')
 });
 
 function obtenerDatosSWAPI(solicitud) {
