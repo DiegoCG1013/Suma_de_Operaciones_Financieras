@@ -7,7 +7,6 @@ import java.util.concurrent.atomic.AtomicLong;
 public class Lanzador {
     public static void main(String[] args) {
         iniciarProcesamiento(args);
-        generarResultadoGlobal(args);
     }
 
     public static void iniciarProcesamiento(String[] archivos) {
@@ -28,6 +27,7 @@ public class Lanzador {
 
         try {
             executor.awaitTermination(1, TimeUnit.HOURS);
+            generarResultadoGlobal(archivos);
         } catch (InterruptedException e) {
             System.err.println("Error al esperar la finalización de los hilos: " + e.getMessage());
         }
