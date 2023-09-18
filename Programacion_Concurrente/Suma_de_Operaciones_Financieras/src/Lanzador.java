@@ -43,6 +43,8 @@ public class Lanzador {
                 System.out.println("Resultado para " + archivo + ": " + sumaDepartamento);
             } catch (IOException e) {
                 System.err.println("Error al leer el archivo de resultado de " + archivo + ": " + e.getMessage());
+            } catch (Exception E){
+                System.out.println("Formato de los numeros erroneo en " + archivo + ", no se modificara el archivo de resultados");
             }
         }
 

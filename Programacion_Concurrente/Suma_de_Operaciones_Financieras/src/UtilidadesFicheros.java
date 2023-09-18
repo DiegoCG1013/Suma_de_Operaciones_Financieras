@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class UtilidadesFicheros {
-    public static long sumarTransaccionesArchivo(String nombreArchivo) throws IOException {
+    public static long sumarTransaccionesArchivo(String nombreArchivo) throws Exception {
         long suma = 0;
         try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
             String linea;

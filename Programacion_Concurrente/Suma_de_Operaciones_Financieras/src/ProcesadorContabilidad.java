@@ -14,6 +14,9 @@ public class ProcesadorContabilidad implements Runnable {
             UtilidadesFicheros.guardarResultado(nombreArchivo, suma);
         } catch (IOException e) {
             System.err.println("Error al procesar el archivo " + nombreArchivo + ": " + e.getMessage());
+        } catch (Exception E){
+            System.out.println("Formato de los numeros erroneo en " + nombreArchivo + ", no se modificara el archivo de resultados");
         }
+
     }
 }
