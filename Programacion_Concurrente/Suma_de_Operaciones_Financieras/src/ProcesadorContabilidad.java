@@ -17,6 +17,5 @@ public class ProcesadorContabilidad implements Runnable {
         } catch (Exception E){
             System.out.println("Formato de los numeros erroneo en " + nombreArchivo + ", no se modificara el archivo de resultados");
         }
-
     }
 }
